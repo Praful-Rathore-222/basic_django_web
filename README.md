@@ -41,7 +41,7 @@ I have used in my application,
 │       ├── password_reset_email.htnl
 │       ├── password_reset_form.html
 │       └── signup.html
-└── user_acc
+└── user_web
     ├── __init__.py
     ├── __pycache__
     ├── settings.py
