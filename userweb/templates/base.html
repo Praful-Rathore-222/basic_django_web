@@ -1,0 +1,53 @@
+<!-- {% load static %} -->
+<!doctype  html>
+<html  lang="en">
+<head>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link  rel="stylesheet"  href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"  integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"  crossorigin="anonymous">
+<title>Basic Django Website</title>
+<style>
+
+body,h1,h2,h3,h5,h6 {font-family: "Lato", sans-serif}
+.w3-bar,h1,button {font-family: "Montserrat", sans-serif}
+.fa-anchor,.fa-coffee {font-size:200px}
+
+.oop{
+  background-image: url("https://bmisw.com/wp-content/uploads/2011/01/blur-background-26350-27041-hd-wallpapers.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  background-size: 100% 100%;
+}
+html body {
+  background-image: url("https://bmisw.com/wp-content/uploads/2011/01/blur-background-26350-27041-hd-wallpapers.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.card {
+        margin: 0 auto; /* Added */
+        margin-top: 80px;
+        float: none; /* Added */
+        margin-bottom: 10px; /* Added */
+}
+
+</style>
+</head>
+<body >
+  <!-- <div class="container">
+     <div  class="row justify-content-center">
+      <div  class="col-4">  -->       
+        <h1  class="text-center" style="margin-top: 13px; color:white">Welcome to Django Website</h1>                  
+      {% block main %}      
+      {% endblock %}
+      
+      <!-- </div>
+    </div>
+  </div> -->
+</body>
+</html>

@@ -1,0 +1,70 @@
+{% extends 'base.html' %}
+
+
+
+{% block main %}
+
+<!-- Navbar -->
+<div class="w3-top">
+    <div class="w3-bar w3-blue w3-card w3-left-align w3-large">
+      <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-red" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="#" class="w3-bar-item w3-button w3-padding-large w3-white">Home</a>
+      <a href="{% url 'login' %}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Login</a>
+      <a href="{% url 'signup' %}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Signup</a>
+      <a href="{% url 'logout' %}" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">logout</a>
+    
+    </div>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+            <a href="{% url 'login' %}" class="w3-bar-item w3-button w3-padding-large">Login</a> 
+            <a href="{% url 'signup' %}" class="w3-bar-item w3-button w3-padding-large">signup</a> 
+            <a href="{% url 'logout' %}" class="w3-bar-item w3-button w3-padding-large">Logout</a>
+    
+        </div>
+    </div>
+<!-- Header -->
+     
+ <header class="w3-container w3-blue w3-center" style="padding:128px 16px">
+    <h1 class="w3-margin w3-jumbo">Welcome</h1>
+    <h3 class="w3-margin ">to Django Website</h3>
+</header>
+    <!-- First Grid -->
+  <div class="w3-row-padding w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-twothird">
+        <h1>About us</h1>
+        <h5 class="w3-padding-32">some about homepage</h5>
+  
+        <p class="w3-text-grey">A simple homepage design welcomes your audience to your site, tells them what you want them to do next, and allows them to explore your site in more depth.
+
+            You can add complexity to a simple homepage design, but you don’t want to start with a cluttered mess and have to selectively prune it. Always begin with the basics..</p>
+      </div>
+      <div class="w3-third w3-center">
+        <i class="fa fa-anchor w3-padding-64 w3-text-blue"></i>
+      </div>
+    </div>
+  </div>
+  <!-- Second Grid -->
+  <div class="w3-row-padding w3-light-grey w3-padding-64 w3-container">
+    <div class="w3-content">
+      <div class="w3-third w3-center">
+        <i class="fa fa-coffee w3-padding-64 w3-text-blue w3-margin-right"></i>
+      </div>
+  
+      <div class="w3-twothird">
+        <h1>Inspirational Quotes</h1>
+        <h5 class="w3-padding-32">– Mary Kay Ash</h5>
+  
+        <p class="w3-text-grey">“Don’t limit yourself. Many people limit themselves to what they think they can do. You can go as far as your mind lets you. What you believe, remember, you can achieve.” </p>
+      </div>
+    </div>
+  </div>
+
+    <!-- Footer -->
+<footer style="text-align: center; ">
+    <p>Thanks to visit our website</p>
+   </footer>
+   
+    
+{%  endblock %}

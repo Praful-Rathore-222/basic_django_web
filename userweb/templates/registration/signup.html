@@ -1,0 +1,26 @@
+{% extends  'base.html' %}
+{% load crispy_forms_tags %}
+
+{% block main %}
+<div class="oop">
+<div class="container">
+    <div  class="row justify-content-center">
+     <div  class="col-4"> 
+<div class="card">
+<div class="card-body">
+<h4 class="card-title">Sign Up your account</h4>
+
+<form method="post">
+    {% csrf_token %}
+    <input type="hidden" name="next" value="{{ next }}">
+    {{ form|crispy }}
+    <button type="submit" class="btn btn-primary btn-block">Sumbit</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+{% endblock %}
